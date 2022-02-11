@@ -1,41 +1,89 @@
 <!DOCTYPE html>
 <html>
+    
     <!-- 
         Pagina Principal
     -->
     <head>
+        
+        <!-- Tag meta obligatoria -->
         <meta http-equiv=”Content-Type” content="text/html"; charset="UTF-8"/>
+
+        <!-- Boostrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
         <title>IBERDROLA: Página Principal</title>
         <style>
-            #myBody{
-                margin: 10px 50px 10px 50px ;
+
+            #index {
+                background-image: url('Recursos/bg_index.png');
+                height:1000px;
             }
 
-            #capaImagen{
-                position:absolute; z-index:1;
+            /* div class */
+            .title {
+                background-color: white;
             }
 
-            #capaTitulo{
-                position:relative; z-index:0;
+            .row {
+                display: grid;
+                grid-template-columns: repeat(4, auto);
             }
+            
+            .col {
+                padding: 10px;
+                border-bottom: 1px solid black;
+                border-right: 1px solid black;
+                background-color: white;
+                }  
+
+            .footer{
+                background-color: white;
+            }
+
+            /* a class */
+            .menu{font-size: 20px}
 
             h1 {text-align:center;}
             h2 {text-align:center;}
+            p {color: yellow;}
+            
         </style>
     </head>
 
-    <body id = "myBody" style = "background-color: aliceblue;">
-        
-        <div id = "capaImagen"><img src = "Recursos/Logo.png" style="height:50px;width:100px;" align = "left"></div>
-         
 
-        <div id = "capaTitulo">
-            <h1>Bienvenidos a Iberdrola: Lider en renovables!</h1>
-            <h2><u>Aquí encontrará todo sobre Iberdrola</u></h2>
+    <body id = "index">
+
+        <header class = "header">
+            <!-- Overlay -->
+            <nav class = "topnav">
+                <div class = "row">
+                <div class = "col" align="middle">
+                    <a class = "menu" href = "index.html">Menu</a>
+                </div>
+                <div class = "col" align = "middle">
+                    <a class = "menu" href = "Historia.html">Historia</a>
+                </div>
+                <div class = "col" align = "middle">
+                    <a class = "menu" href = "Servicios.html">Servicios</a>
+                </div>
+                <div class = "col" align = "middle">
+                    <a class = "menu" href = "Tarifas.html">Tarifas</a>
+                </div>
+                </div>
+            </nav>
+            <div class = "title">
+                <h1>BIENVENIDOS A IBERDROLA</h1>
+                <h2><u>Aquí encontrará todo sobre Iberdrola</u></h2>
+            </div>
+        </header>
+
+        <div class = "alert alert-warning" role = "alert">
+            <i>ALERTA: </i>Ahora mismo este web está en versión <b>2.0</b>.
+            <br> Por cierto, el botón Iberdrola <u>NO</u> funciona.
         </div>
-        <br>
 
-        <p>Ahora mismo este web está en versión <b>1.0</b> <br>
+        <p>
             Actualmente hay <b>3</b> posibles accesos: <br>
 
             <ol>
@@ -58,32 +106,30 @@
         </video></p>
 
         <p>
-            <form action> 
-                <p align = "middle">
-                <button type = "submit" formaction = "Historia.html">Historia</button>
-                <button type = "submit" formaction = "Servicios.html">Servicios Disponibles</button>
-                <button type = "submit" formaction = "Tarifas.html">Tarifas</button>
-                </p>
-            </form> 
-            <br>
+            Si te gustaria saber más sobre nosotros, pulsa este boton: 
+            <button type="submit" class = "btn btn-secondary" formaction="https://www.iberdrola.com">Iberdrola</button> <!-- Este botón funcionará con JavaScript (práctica siguiente)-->
+            .<br> 
 
-            Si te gustaria saber más sobre nosotros, por favor
-            <a href = "https://www.iberdrola.com" target = "_blank">entra a este link</a>. <br> 
-
-            <br>
+            Si no funciona este boton, pulsa este link:
+            <a href = "https://www.iberdrola.com" target = "_blank">Iberdrola</a>
+            .<br>
 
             Si hay algo de mejora para actualizaciones nuevas de este web,
             estaríamos agradecidos si rellenais este 
             
             <a href = "Cuestionario.html">cuestionario</a>.
         </p>
-        <footer id = "footer" style = "background-color: white;"><u>Pon en contacto con nosotros: </u><br>
+
+        <footer class = "footer">
+            <u>Pon en contacto con nosotros: </u><br>
             <ul>
                 <li>Teléfono: 900 322 044</li>
                 <li>Correo: clientes@iberdola.es</li>
             </ul>
 
             <br>
+
+            </div>
 
             <form>
                 <p align = "middle">
