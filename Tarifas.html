@@ -13,21 +13,13 @@
         <title>IBERDROLA: Tarifas</title>
         <style>
             /* div class */
+            .navbar-nav {
+                font-size: 20px;
+            }
+
             .title {
                 background-color: white;
             }
-
-            .row {
-                display: grid;
-                grid-template-columns: repeat(4, auto);
-            }
-            
-            .col {
-                padding: 10px;
-                border-bottom: 1px solid black;
-                border-right: 1px solid black;
-                background-color: white;
-                }  
 
             /* a class */
             .menu{font-size: 20px}
@@ -37,22 +29,19 @@
     </head>
     <body id = "tarifas" style = "background-color: aliceblue;">
         <header class = "header">
-            <nav class = "topnav">
-                <div class = "row">
-                <div class = "col" align="middle">
-                    <a class = "menu" href = "index.html">Menu</a>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html">Menu Principal</a>
+                    <a class="nav-item nav-link" href="Historia.html">Historia</a>
+                    <a class="nav-item nav-link" href="Servicios.html">Servicios</a>
+                    <a class="nav-item nav-link active" href="Tarifas.html">Tarifas <span class="sr-only">(Actual)</span></a>
+                  </div>
                 </div>
-                <div class = "col" align = "middle">
-                    <a class = "menu" href = "Historia.html">Historia</a>
-                </div>
-                <div class = "col" align = "middle">
-                    <a class = "menu" href = "Servicios.html">Servicios</a>
-                </div>
-                <div class = "col" align = "middle">
-                    <a class = "menu" href = "Tarifas.html">Tarifas</a>
-                </div>
-                </div>
-            </nav>
+              </nav>
 
             <div class = "title">
                 <h1>Tarifas</h1>
