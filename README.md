@@ -1,120 +1,68 @@
-# Practica 2: Creación de página web en HTML Puro
+# Práctica 3: Crea un site empleando Bootstrap
+
+  
 
 ## Emilio Kenji Hernández Kuramata
 
-  **Compañia: Iberdrola**
-
   
 
+**Compañia: Iberdrola**
+  
 ### Enunciado
 
+El alumno empleando los conocimientos adquirido en el aula sobre   
+HTML y CSS, creara un site (Conjunto de documentos web interconectados mediante   
+enlaces hipermedias). Los documentos emplearán el Framework CSS Bootstrap.  
   
-
-El alumno empleando los conocimientos de HTML vistos en clase
-
-y apoyándose en la documentación de Mozilla, creara un
-
-site sobre una tematica relativa a una empresa del Indice Bursátil IBEX 35.
-
+El site debe contener elementos de HTML diversos:  
   
-
-El site constará de una pagina principal y 3 paginas interiores interconectadas.
-
+- Títulos  
+- Párrafos  
+- Multimedia  
+- Formularios Web  
+- Enlaces  
   
+y además estructuras y componentes propuestos por el   
+Framework CSS Bootstrap como son:  
+   
+- Grid  
+- Nav  
+- Footer  
+- Tipografía  
+- Tablas   
+- Botones  
+- Alertas  
+- Objetos de paginación
 
-Los documentos web que componen el site deben contener elementos diversos de HTML:
-
-- Títulos
-
-- Párrafos
-
-- Tablas
-
-- Multimedia
-
-- Formularios Web
-
-  
 ### Método
 
-Para crear el site deseado, voy a utilizar lo que he aprendido de la teoría HTML siguiendo esta estructura para cada página:
-
-1) !DOCTYPE
-
-2) html
-
-3) head
-
-4) body
-
-  
-  
-
-En cuanto al diseño de la página, prestaré ayuda de https://www.w3schools.com/html/ para configurar y adaptar el código necesarios a mis páginas.
-
-  
+Para crear el site deseado, voy a utilizar lo que he aprendido de la teoría CSS Bootstrap. Prestaré ayuda de https://www.w3schools.com/html/ para configurar y adaptar el código necesarios a mis páginas.
 
 ### Contenido (Requerido)
 
-  
-
 Mi site contiene lo siguiente:
 
-  1) Títulos (Todas las ventanas)
+	1) Grid  (Servicios.html)
+	2) Nav  (Todas las paginas menos el cuestionario.html)
+	3) Footer  (index.html)
+	4) Tipografía (principalmente en index.html)
+	5) Tablas (Servicios.html)
+	6) Botones (Todas las ventanas)
+	7) Alertas  (Todas las ventanas)
+	8) Objetos de paginación (Historia.html)
 
-2) Párrafos (Todas las ventanas)
-
-3) Tablas (1 en Servicio.html)
-
-4) Multimedia
-
-	- Imágenes (Todas menos Cuestionario.html)
-
-	- Links (Todas menos Cuestionario.html)
-
-5) Formularios Web (Cuestionario.html)
-
-  
-  
-
-### Contenido (Extra) 
-
-  
+### Contenido (Extra)
 
 He añadido esto de extra a mi site:
 
-1) Multimedia
+	1) Insignias (index.html y Historia(2 y 3 incluidos).html)
+	2) Barra de progreso (en las alertas de info)
+	3) Collapse (un ejemplo puesto en Servicios.html, 
+	   aunque no funciona debido a que necesita 
+	   interacción con Javascript --> para la siguiente práctica)
 
-	- Videos (index.html contiene un .mp4)
+### Todo se puede comprobar en mi Github page de esta práctica:
 
-	- Links mediante Iconos (Redes Sociales en index.html y Cuestionario.html)
+https://emiliokenjihk.github.io/Practica3/
 
-2) IFrames (index.html para el video youtube y Tarifas.html para el web)
-
-3) Formatear el contenido mediante márgenes y colores (Todas las ventanas)
-
-4) Utilizar itálica, negrita y subrayar texto (principalmente en index.html)
-
-### Pasos recomendados para comprobar el funcionamiento
-<ins>- **index.html**</ins>
-1) Comprobar que ambos videos funcionan (youtube y mp4).
-2) Click los links del texto (salvo "cuestionario") para comprobar que crea un nuevo tab con el link correcto.
-3) Ctrl + Click los iconos de redes sociales para comprobar que llevan al sitio correcto correspondiente.
-4) Pulsar los botones + el link "cuestionario" para comprobar que llevan a las otras páginas interiores.
-
-<ins>- **Historia.html**</ins>
-1) Comprobar que el link funciona.
-2) Comprobar que el botón "Volver Atras" vuelve a index.html.
-
-<ins>- **Servicios.html**</ins>
-1) Comprobar que los links funcionan.
-2) Comprobar que el botón "Volver Atras" vuelve a index.html.
-
-<ins>- **Tarifas.html**</ins>
-1) Comprobar que el iframe muestra una página web.
-2) Comprobar que el botón "Volver Atras" vuelve a index.html
-
-<ins>- **Cuestionario.html**</ins>
-1) Comprobar que se muestra un texto de error si dejas algún campo de texto vacio (y que se borra al rellenar dicho campo).
-2) Comprobar que ocurre un popup al pulsar el icono del correo
-3) Comprobar que el botón "Volver Atras" vuelve a index.html
+Recordatorio: Para acceder Cuestionario.html, debe acceder mediante el link que se encuentra en index.html (en la palabra "cuestionario").
