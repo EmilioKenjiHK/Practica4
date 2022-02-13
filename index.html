@@ -33,12 +33,17 @@
                 background-color: white;
             }
 
+            .badge {
+                color:black
+            }
+
             /* a class */
             .menu{font-size: 20px}
 
             h1 {text-align:center;}
             h2 {text-align:center;}
             p {color: yellow;}
+
             
         </style>
     </head>
@@ -60,7 +65,7 @@
                 </div>
               </nav>
             <div class = "title">
-                <h1>BIENVENIDOS A IBERDROLA</h1>
+                <h1>BIENVENIDOS A <span class = "badge badge-dark">IBERDROLA</span></h1>
                 <h2><u>Aquí encontrará todo sobre Iberdrola</u></h2>
             </div>
         </header>
@@ -68,6 +73,9 @@
         <div class = "alert alert-warning" role = "alert">
             <i>ALERTA: </i>Ahora mismo este web está en versión <b>2.0</b>.
             <br> Por cierto, el botón Iberdrola <u>NO</u> funciona.
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">50% completado</div>
+            </div>
         </div>
 
         <p>
@@ -98,17 +106,17 @@
             .<br> 
 
             Si no funciona este boton, pulsa este link:
-            <a href = "https://www.iberdrola.com" target = "_blank">Iberdrola</a>
+            <a href = "https://www.iberdrola.com" target = "_blank" class = "badge badge-primary">Iberdrola</a>
             .<br>
 
             Si hay algo de mejora para actualizaciones nuevas de este web,
             estaríamos agradecidos si rellenais este 
             
-            <a href = "Cuestionario.html">cuestionario</a>.
+            <a href = "Cuestionario.html" class = "badge badge-primary">cuestionario</a>.
         </p>
 
         <footer class = "footer">
-            <u>Pon en contacto con nosotros: </u><br>
+            <u>Pon en contacto con nosotros</a></u><br>
             <ul>
                 <li>Teléfono: 900 322 044</li>
                 <li>Correo: clientes@iberdola.es</li>
