@@ -36,7 +36,7 @@ Framework CSS Bootstrap como son:
 
 ### Método
 
-Para crear el site deseado, voy a utilizar lo que he aprendido de la teoría CSS Bootstrap. Prestaré ayuda de https://www.w3schools.com/html/  y https://getbootstrap.com/ para configurar y adaptar el código necesarios a mis páginas.
+Para crear el site deseado, voy a utilizar lo que he aprendido de la teoría CSS Bootstrap. Prestaré ayuda de https://www.w3schools.com/html/  y https://getbootstrap.com/ para configurar y adaptar el código necesario a mis páginas.
 
 ### Contenido (Requerido)
 
