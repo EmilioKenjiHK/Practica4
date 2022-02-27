@@ -1,4 +1,6 @@
-# Práctica 3: Crea un site empleando Bootstrap
+# Práctica 4: Consume un API REST JSON y visualizalo en un documento web
+
+  
 
   
 
@@ -6,63 +8,61 @@
 
   
 
-**Compañia: Iberdrola**
   
+
+**Compañia: Iberdrola**
+
 ### Enunciado
 
 El alumno empleando los conocimientos adquirido en el aula sobre   
-HTML y CSS, creara un site (Conjunto de documentos web interconectados mediante   
-enlaces hipermedias). Los documentos emplearán el Framework CSS Bootstrap.  
+HTML, CSS y Javascript, creará un documento web que permita   
+interaccionar con una API REST y visualice en el documento la información.  
+El documento empleará el Framework CSS Bootstrap.  
   
-El site debe contener elementos de HTML diversos:  
+La programación en Javascript incluirá:  
   
-- Títulos  
-- Párrafos  
-- Multimedia  
-- Formularios Web  
-- Enlaces  
-  
-y además estructuras y componentes propuestos por el   
-Framework CSS Bootstrap como son:  
-   
-- Grid  
-- Nav  
-- Footer  
-- Tipografía  
-- Tablas   
-- Botones  
-- Alertas  
-- Objetos de paginación
+- Uso de llamadas asíncronas a un API Rest  
+- Uso de interacción al DOM del documento para visualizar la información
+
+ 
 
 ### Método
 
-Para crear el site deseado, voy a utilizar lo que he aprendido de la teoría CSS Bootstrap. Prestaré ayuda de https://www.w3schools.com/html/  y https://getbootstrap.com/ para configurar y adaptar el código necesario a mis páginas.
+  
+
+Para crear el site deseado, voy a utilizar lo que he aprendido de la teoría Javascript. Prestaré ayuda de https://www.w3schools.com/html/ y https://getbootstrap.com/ para configurar y adaptar el código necesario a mis páginas.
+
+  
 
 ### Contenido (Requerido)
 
+  
+
 Mi site contiene lo siguiente:
 
-	1) Grid  (Servicios.html)
-	2) Nav  (Todas las paginas menos el cuestionario.html)
-	3) Footer  (index.html)
-	4) Tipografía (principalmente en index.html)
-	5) Tablas (Servicios.html)
-	6) Botones (Todas las ventanas)
-	7) Alertas  (Todas las ventanas)
-	8) Objetos de paginación (Historia.html)
+  
 
+1) Uso de llamadas asíncronas (randomuser.js y dog.js)
+2) Uso de interacción DOM (randomuser.js y dog.js)
+
+  
 ### Contenido (Extra)
 
 He añadido esto de extra a mi site:
 
-	1) Insignias (index.html y Historia(2 y 3 incluidos).html)
-	2) Barra de progreso (en las alertas de info)
-	3) Collapse (un ejemplo puesto en Servicios.html, 
-	   aunque no funciona debido a que necesita 
-	   interacción con Javascript --> para la siguiente práctica)
+  
+
+1) Uso de Javsascript para hacer un acordeón (collapse) en un botón (Servicios.html)
+
+2) Un run paralelo (ejecutando 3 await función en paralelo) en mi Javascript (randomuser.js)
+  
 
 ### Todo se puede comprobar en mi Github page de esta práctica:
 
-https://emiliokenjihk.github.io/Practica3/
+  
+
+https://emiliokenjihk.github.io/Practica4/
+
+  
 
 Recordatorio: Para acceder Cuestionario.html, debe acceder mediante el link que se encuentra en index.html (en la palabra "cuestionario").

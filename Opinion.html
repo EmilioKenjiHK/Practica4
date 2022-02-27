@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Tag meta obligatoria -->
+    <meta http-equiv=”Content-Type” content="text/html"; charset="UTF-8"/>
+
+    <!-- Boostrap CSS -->
+    <link href="./libs/boostrap.css" rel="stylesheet">
+
+    <title>IBERDROLA: Opinion</title>
+    <style>
+        /* div class */
+        .navbar-nav {
+            font-size: 20px;
+        }
+        
+        .title {
+            background-color: white;
+        }
+
+        .badge {
+            color:black;
+        }
+
+
+        /* a class */
+        .menu{font-size: 20px}
+
+
+        h1 {text-align:center;}
+        h2 {text-align:center;}
+
+        /* p class */
+        .nombre{
+            font-weight:bold;
+        }
+
+    </style>
+</head>
+
+<body id = "opinion">
+    <header class = "header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Menu Principal</a>
+                <a class="nav-item nav-link" href="Historia.html">Historia</a>
+                <a class="nav-item nav-link" href="Servicios.html">Servicios</a>
+                <a class="nav-item nav-link" href="Tarifas.html">Tarifas</a>
+                <a class="nav-item nav-link active" href="Opinion.html">Opiniones Clientes<span class="sr-only">(Actual)</span></a>
+              </div>
+            </div>
+          </nav>
+        <div class = "title">
+            <h1>Opiniones de Nuestros Clientes</h1>
+            <h2><u>Aquí son algunas opiniones de algunas personas</u></h2>
+        </div>
+    </header>
+
+    <div class = "alert alert-warning" role = "alert">
+        <i>ALERTA: </i>Ahora mismo este web está en versión <b>3.0</b>.
+        <br> Por cierto, el botón Iberdrola <u>NO</u> funciona.
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75% completado</div>
+        </div>
+    </div>
+
+    <p>Fuente: <a href = "https://companiadeluz.es/iberdrola/opiniones" class = "badge badge-primary">https://companiadeluz.es/iberdrola/opiniones</a></p>
+
+    <div id = persona1>
+        <p align = "middle"><img id = "foto1" style = "height:200px; width:200px;"></p>
+        <p align = "middle" id = "nombre1" class = "nombre"></p>
+        <p align = "middle" id = "lugar1"></p>
+        <p align = "middle" id = "correo1"></p>
+        <p align = "middle" id = "op1">Unos ladrones que me estan poniendo mil pegas para terminar mi contrato. Me piden documentos que ya tienen y me siguen cobrando. Verguenza!!!!!</p>
+    </div>
+
+    <div id = persona2>
+        <p align = "middle"><img id = "foto2" style = "height:200px; width:200px;"></p>
+        <p align = "middle" id = "nombre2" class = "nombre"></p>
+        <p align = "middle" id = "lugar2"></p>
+        <p align = "middle" id = "correo2"></p>
+        <p align = "middle" id = "op2">La mejor compañía eléctrica del mundo. Perfecta técnicamente en sus instalaciones eléctricas, de agua y de parques eólicos. Su seriedad y servicio técnicos son excepcionales.</p>
+    </div>
+
+    <div id = persona3>
+        <p align = "middle"><img id = "foto3" style = "height:200px; width:200px;"></p>
+        <p align = "middle" id = "nombre3" class = "nombre"></p>
+        <p align = "middle" id = "lugar3"></p>
+        <p align = "middle" id = "correo3"></p>
+        <p align = "middle" id = "op3">Llevo mucho tiempo con ellos y con el tiempo soy él que más pago!! Ahora sí, llamas a quejarte y todo son buenas palabras</p>
+    </div>
+
+    <form action>
+        <p align = "middle"><button type = "submit" class = "btn btn-outline-primary" formaction = "index.html">Volver Atras</button></p>
+    </form>
+    
+</body>
+<script src = "js/randomuser.js"></script>
+</html>

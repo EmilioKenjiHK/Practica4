@@ -8,7 +8,7 @@
         <meta http-equiv=”Content-Type” content="text/html"; charset="UTF-8"/>
 
         <!-- Boostrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="./libs/boostrap.css" rel="stylesheet">
 
         <title>IBERDROLA: Servicios</title>
         <style>
@@ -19,6 +19,13 @@
 
             .title {
                 background-color: white;
+            }
+
+            .content {
+                padding: 0 18px;
+                display: none;
+                overflow: hidden;
+                background-color: #f1f1f1;
             }
 
             /* a class */
@@ -53,6 +60,7 @@
                     <a class="nav-item nav-link" href="Historia.html">Historia</a>
                     <a class="nav-item nav-link active" href="Servicios.html">Servicios <span class="sr-only">(Actual)</span></a>
                     <a class="nav-item nav-link" href="Tarifas.html">Tarifas</a>
+                    <a class="nav-item nav-link" href="Opinion.html">Opiniones Clientes</a>
                   </div>
                 </div>
               </nav>
@@ -63,10 +71,9 @@
         </header>
 
         <div class = "alert alert-warning" role = "alert">
-            <i>ALERTA: </i>Ahora mismo este web está en versión <b>2.0</b>.
-            <br> El botón "Iberdrola en Cifras" <b>NO</b> funciona.
+            <i>ALERTA: </i>Ahora mismo este web está en versión <b>3.0</b>.
             <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">50% completado</div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75% completado</div>
             </div>
         </div>
 
@@ -75,14 +82,19 @@
 
         <p align = "center"><img src = "Recursos/Operaciones.png" style = "height:400px;width:400px;"></p>
 
-        <p align = "center">
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="informacion" aria-expanded="false" aria-controls="collapseExample">
-              Iberdrola en Cifras
-            </button>
-        </p>
+        <div class = "boton" align="center">
+        <button type="button" id="collapsible">Iberdrola en Cifras</button>
+        <div class="content">
+            <p align = "middle">
+                <img src = "Recursos/Cifras.png">
+            </p>
+        </div>
+        </div>
+
+
           <div class="collapse" id="informacion">
             <div class="card card-body">
-                Efectos como los ajustes en la fiscalidad por impuestos y tasas en España y Reino Unido, junto con el impacto del RDL 17/2021 en España (-114 M€), así como otros extraordinarios (COVID), reducen el beneficio neto reportado, mientras que el ajustado crece un 5,2 % hasta los 2.688 millones. El beneficio bruto de explotación (Ebitda) también crece un 10,7 % hasta los 8.165 millones. Estos resultados han sido impulsados por unas inversiones récord de 7.036 millones (+6 %), un 90 % de ellas dirigidas al desarrollo de nuevos proyectos renovables, almacenamiento y redes inteligentes; las inversiones en redes han incrementado un 27 %, hasta los 3.185 millones. En cuanto a los ingresos, el 70 % proceden de mercados con rating A. Asimismo, la compañía ha realizado compras a proveedores por valor de 22.000 millones desde enero de 2020 y contribuye a mantener 400.000 empleos en el mundo. Por otra parte, de la capacidad prevista a 2025, más de 22.000 MW (el 82 %) se encuentran ya instalados, en construcción o con un alto grado de maduración.
+                Efectos como los ajustes en la fiscalidad por impuestos y tasas en España y Reino Unido, junto con el impacto del RDL 17/2021 en España (-114 M€), así como otros extraordinarios (COVID), reducen el beneficio neto reportado, mientras que el ajustado crece un 5,2 % hasta los 2.688 millones. El beneficio bruto de explotación (Ebitda) también crece un 10,7 % hasta los 8.165 millones. Estos resultados han sido impulsados por unas inversiones récord de 7.036 millones (+6 %), un 90 % de ellas dirigidas al desarrollo de nuevos proyectos renovables, almacenamiento y redes inteligentes; las inversiones en redes han incrementado un 27 %, hasta los 3.185 millones. En cuanto a los ingresos, el 70 % proceden de mercados con rating A. Asimismo, la compañía ha realizado compras a proveedores por valor de 23.000 millones desde enero de 2020 y contribuye a mantener 400.000 empleos en el mundo. Por otra parte, de la capacidad prevista a 2025, más de 23.000 MW (el 82 %) se encuentran ya instalados, en construcción o con un alto grado de maduración.
             </div>
           </div>
 
@@ -190,4 +202,19 @@
         </form>
 
     </body>
+
+    <script>
+        var coll = document.getElementById("collapsible");
+        coll.addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        console.log(content);
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+        });
+    </script>
+    
 </html>

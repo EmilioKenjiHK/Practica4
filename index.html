@@ -10,7 +10,7 @@
         <meta http-equiv=”Content-Type” content="text/html"; charset="UTF-8"/>
 
         <!-- Boostrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="./libs/boostrap.css" rel="stylesheet">
 
         <title>IBERDROLA: Página Principal</title>
         <style>
@@ -61,6 +61,7 @@
                     <a class="nav-item nav-link" href="Historia.html">Historia</a>
                     <a class="nav-item nav-link" href="Servicios.html">Servicios</a>
                     <a class="nav-item nav-link" href="Tarifas.html">Tarifas</a>
+                    <a class="nav-item nav-link" href="Opinion.html">Opiniones Clientes</a>
                   </div>
                 </div>
               </nav>
@@ -71,20 +72,20 @@
         </header>
 
         <div class = "alert alert-warning" role = "alert">
-            <i>ALERTA: </i>Ahora mismo este web está en versión <b>2.0</b>.
-            <br> Por cierto, el botón Iberdrola <u>NO</u> funciona.
+            <i>ALERTA: </i>Ahora mismo este web está en versión <b>3.0</b>.
             <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">50% completado</div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75% completado</div>
             </div>
         </div>
 
         <p>
-            Actualmente hay <b>3</b> posibles accesos: <br>
+            Actualmente hay <b>4</b> posibles accesos: <br>
 
             <ol>
                 <li><i>La Historia de Iberdrola</i></li>
                 <li><i>Servicios disponibles</i></li>
                 <li><i>Tarifas de Luz</i></li>
+                <li><i>Opiniones de Clientes</i></li>
             </ol> 
 
         </p>
@@ -102,7 +103,7 @@
 
         <p>
             Si te gustaria saber más sobre nosotros, pulsa este boton: 
-            <button type="submit" class = "btn btn-secondary" formaction="https://www.iberdrola.com">Iberdrola</button> <!-- Este botón funcionará con JavaScript (práctica siguiente)-->
+            <button type="submit" class = "btn btn-secondary" onClick="javascript:window.open('http://www.iberdrola.com', '_blank');">Iberdrola</button> 
             .<br> 
 
             Si no funciona este boton, pulsa este link:
@@ -113,6 +114,13 @@
             estaríamos agradecidos si rellenais este 
             
             <a href = "Cuestionario.html" class = "badge badge-primary">cuestionario</a>.
+        </p>
+
+        <p>
+            Muchas gracias por visitar este sitio web.
+            Mostramos nuestra gratitud con fotos de perro(s):
+
+            <p align = "middle"><img id = "perro" onload="javascript:setPic();" style = "height:200px; width:200px;"></p>
         </p>
 
         <footer class = "footer">
@@ -135,4 +143,6 @@
             </form>
         </footer>
     </body>
+
+    <script src = "js/dog.js"></script> 
 </html>

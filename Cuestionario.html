@@ -8,9 +8,8 @@
         <meta http-equiv=”Content-Type” content="text/html"; charset="UTF-8"/>
 
         <!-- Boostrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-        <title>IBERDROLA: Cuestionario</title>
+        <link href="./libs/boostrap.css" rel="stylesheet">
+        
         <style>
             #myBody{
                 margin: 50px;
@@ -24,10 +23,12 @@
         <h1>Cuestionario</h1>
 
         <div class = "header">
+         <!-- 
             <div class = "alert alert-danger" role = "alert">
-                <i>ALERTA: El cuestionario <ins>NO</ins> funciona.</i>
-                <br> Disculpa por las molestias.
+            <i>ALERTA: El cuestionario <ins>NO</ins> funciona.</i>
+            <br> Disculpa por las molestias.
             </div>
+        -->
         </div>
 
         <form action = "send.html" method="post" id = "signup">
@@ -68,13 +69,15 @@
                 <input type = "image" src = "Recursos/Email.png" alt = "submit" width = "50px" height = "50px">
             </p>
         </form>
-        <script src = "js/popup.js"></script>
+        
 
         <form action>
             <p align = "middle">
             <button type = "submit" class = "btn btn-danger" formaction = "index.html">Volver Atras</button>
             </p>
         </form>
+
+        <script src = "js/popup.js"></script>
 
     </body>
 </html>
